@@ -1,16 +1,42 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessible Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+  <header role="heading">
+    <h1>My Accessible Portfolio</h1>
+  </header>
+  <nav role="navigation">
+    <ul>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <img src="profile.jpg" alt="A photo of me" role="img">
+      <p>I am a passionate web developer with a focus on creating accessible and inclusive websites.</p>
+    </section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul role="list">
+        <li role="listitem">Accessible Blog Platform</li>
+        <li role="listitem">Inclusive E-commerce Website</li>
+        <li role="listitem">Web Accessibility Checklist Tool</li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>Feel free to reach out to me at <a href="mailto:contact@example.com">contact@example.com</a>.</p>
+    </section>
+  </footer>
 </body>
-
 </html>
